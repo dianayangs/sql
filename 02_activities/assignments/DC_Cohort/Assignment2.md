@@ -54,7 +54,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Your answer... 
+
+Type 1: this architecture will overwrite data with new values. This table will store 1 row per customer with their street address, city, province, country, postal code, customerID, dateofupdate to track when it was last changed.
+Type 2: this architecture will store historical data and not overwrite when a new address is added. The table will store each new address per customer per row with their street address, city, province, country, postal code, customerID, dateadded (to track when this address was entered), and activeaddress(a YES/NO or any boolean data type that marks if this is their current address to be used)
 ```
 
 ***
@@ -184,4 +187,11 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 ```
 Your thoughts...
+The ethical issues important to this story are:
+Labour exploitation: the first part of the article touches on the forgotten contributions
+of human labour and skill in the industrialized world, where we in developed countries
+do not consider the human need in the product of our everyday fast products that we always
+assume as been automated by technology. In the same way humans are at the root of clothing manufacturing,
+humans are also at the root of machine learning, neural networks and AI, being paid very little for their irreplaceable work
+
 ```
